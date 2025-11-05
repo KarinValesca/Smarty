@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartyPay PCF1 - Registro de Nuevo Usuario">
+    <meta name="author" content="Karin Valesca Cartes Fuica">
+    <title>Registro de Usuario - SmartyPay PCF1</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles-global.css">
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <!-- Contenedor del registro -->
+    <div class="auth-container">
+        <div class="auth-card wide">
+            <!-- Header con logo -->
+            <div class="auth-header">
+                <div class="logo-container">
+                    <img src="./images/logo-smartypay.png" alt="Logo SmartyPay" class="logo-icon">
+                    <h1 class="logo-title">SmartyPay</h1>
+                </div>
+                <h2 class="auth-title">Crear Cuenta</h2>
+                <p class="auth-subtitle">Complete el formulario para registrarse en el sistema</p>
+            </div>
+
+            <!-- Formulario de registro -->
+            <form class="registro-form">
+
+                <!-- Información Personal -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Información Personal</h3>
+
+                    <!-- Nombre completo -->
+                    <div class="form-group">
+                        <label for="nombreCompleto" class="form-label">Nombre Completo *</label>
+                        <input
+                            type="text"
+                            name="nombreCompleto"
+                            class="form-input"
+                            placeholder="Ingresa tu nombre completo"
+                            required
+                            autocomplete="name"
+                        >
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email" class="form-label">Correo Electrónico *</label>
+                        <input
+                            type="email"
+                            name="email"
+                            class="form-input"
+                            placeholder="ejemplo@correo.com"
+                            required
+                            autocomplete="email"
+                        >
+                    </div>
+
+                    <!-- Confirmar Email -->
+                    <div class="form-group">
+                        <label for="confirmarEmail" class="form-label">Confirmar Correo Electrónico *</label>
+                        <input
+                            type="email"
+                            name="confirmarEmail"
+                            class="form-input"
+                            placeholder="Confirma tu correo electrónico"
+                            required
+                            autocomplete="email"
+                        >
+                    </div>
+                </div>
+
+                <!-- Seguridad -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Seguridad</h3>
+
+                    <!-- Contraseña -->
+                    <div class="form-group">
+                        <label for="password" class="form-label">Contraseña *</label>
+                        <input
+                            type="password"
+                            name="password"
+                            class="form-input"
+                            placeholder="Crea una contraseña segura"
+                            required
+                            autocomplete="new-password"
+                        >
+                        <span class="input-help-text">Mínimo 8 caracteres, incluye mayúsculas, minúsculas, números y símbolos</span>
+                    </div>
+
+                    <!-- Confirmar Contraseña -->
+                    <div class="form-group">
+                        <label for="confirmarPassword" class="form-label">Confirmar Contraseña *</label>
+                        <input
+                            type="password"
+                            name="confirmarPassword"
+                            class="form-input"
+                            placeholder="Confirma tu contraseña"
+                            required
+                            autocomplete="new-password"
+                        >
+                    </div>
+                </div>
+
+                <!-- Información de Residencia -->
+                <div class="form-section">
+                    <h3 class="form-section-title">Información de Residencia</h3>
+
+                    <!-- Tipo de Usuario -->
+                    <div class="form-group">
+                        <label for="tipoUsuario" class="form-label">Tipo de Usuario *</label>
+                        <select
+                            name="tipoUsuario"
+                            class="form-select"
+                            required
+                        >
+                            <option value="">Selecciona un tipo</option>
+                            <option value="residente">Residente</option>
+                            <option value="propietario">Propietario</option>
+                            <option value="arrendatario">Arrendatario</option>
+                        </select>
+                    </div>
+
+                    <!-- Número de Torre -->
+                    <div class="form-group">
+                        <label for="numeroTorre" class="form-label">Número de Torre/Apartamento *</label>
+                        <input
+                            type="text"
+                            name="numeroTorre"
+                            class="form-input"
+                            placeholder="Ej: 2, 407, etc."
+                            required
+                        >
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="form-group">
+                        <label for="telefono" class="form-label">Teléfono de Contacto *</label>
+                        <input
+                            type="tel"
+                            name="telefono"
+                            class="form-input"
+                            placeholder="+57 311 123 5678"
+                            required
+                            autocomplete="tel"
+                        >
+                    </div>
+                </div>
+
+                <!-- Términos y Condiciones -->
+                <div class="form-section">
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input
+                                type="checkbox"
+                                name="aceptarTerminos"
+                                required
+                            >
+                            <span class="checkbox-checkmark"></span>
+                            <span class="checkbox-label">
+                                Acepto los <a href="terminos.html" target="_blank" class="link-inline">Términos y Condiciones</a>
+                                y la <a href="politica-privacidad.html" target="_blank" class="link-inline">Política de Privacidad</a> *
+                            </span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-container">
+                            <input
+                                type="checkbox"
+                                name="recibirNotificaciones"
+                            >
+                            <span class="checkbox-checkmark"></span>
+                            <span class="checkbox-label">
+                                Deseo recibir notificaciones sobre pagos y noticias de la comunidad
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Botones de acción -->
+                <div class="form-actions">
+                    <button
+                        type="submit"
+                        class="btn btn-primary btn-block btn-large"
+                    >
+                        Crear Cuenta
+                    </button>
+
+                    <div class="auth-links">
+                        <span class="link-text">¿Ya tienes una cuenta?</span>
+                        <a href="login.html" class="link-primary">Iniciar Sesión</a>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="auth-footer">
+                <p class="footer-text">
+                    SmartyPay PCF1 v1.0.0 - Sistema de Gestión de Pagos
+                </p>
+                <p class="footer-text text-muted">
+                    © 2025 Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

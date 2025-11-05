@@ -1,0 +1,42 @@
+/* ESTILOS PANTALLA RECUPERAR CONTRASEÑA - SmartyPay PCF1
+   Archivo: recuperar-contrasena.css*/
+
+/* Formulario de recuperación */
+.recuperar-form {
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Caja de información */
+.info-box {
+    display: flex;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background-color: #E1F5FE;
+    border-left: 4px solid #0288D1;
+    border-radius: var(--border-radius-md);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.info-icon {
+    width: 24px;
+    height: 24px;
+    color: #0288D1;
+    flex-shrink: 0;
+}
+
+.info-text {
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: #01579B;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .info-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

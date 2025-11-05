@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartyPay PCF1 - Recuperación de Contraseña">
+    <meta name="author" content="Karin Valesca Cartes Fuica">
+    <title>Recuperar Contraseña - SmartyPay PCF1</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles-global.css">
+    <link rel="stylesheet" href="recuperar-contrasena.css">
+</head>
+<body>
+    <!-- Contenedor de recuperación de contraseña -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <!-- Header con logo -->
+            <div class="auth-header">
+                <div class="logo-container">
+                    <img src="./images/logo-smartypay.png" alt="Logo SmartyPay" class="logo-icon">
+                    <h1 class="logo-title">SmartyPay</h1>
+                </div>
+                <h2 class="auth-title">Recuperar Contraseña</h2>
+                <p class="auth-subtitle">Ingresa tu correo electrónico y te enviaremos instrucciones para restablecer tu contraseña</p>
+            </div>
+
+            <!-- Formulario de recuperación -->
+            <form class="recuperar-form">
+                <!-- Campo de email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="ejemplo@correo.com"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <!-- Información adicional -->
+                <div class="info-box">
+                    <svg class="info-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    <p class="info-text">
+                        Recibirás un correo con un enlace para restablecer tu contraseña.
+                        El enlace será válido por 24 horas.
+                    </p>
+                </div>
+
+                <!-- Botón de enviar -->
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-block btn-large"
+                >
+                    Enviar Instrucciones
+                </button>
+
+                <!-- Enlaces adicionales -->
+                <div class="auth-links">
+                    <a href="login.html" class="link-secondary">Volver al inicio de sesión</a>
+                    <span class="separator">|</span>
+                    <a href="registro.html" class="link-primary">Crear cuenta nueva</a>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="auth-footer">
+                <p class="footer-text">
+                    SmartyPay PCF1 v1.0.0 - Sistema de Gestión de Pagos
+                </p>
+                <p class="footer-text text-muted">
+                    © 2025 Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

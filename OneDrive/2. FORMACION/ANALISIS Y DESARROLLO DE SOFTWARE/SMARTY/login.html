@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartyPay PCF1 - Sistema de Gestión de Pagos para Propiedad Horizontal">
+    <meta name="author" content="Karin Valesca Cartes Fuica">
+    <title>Iniciar Sesión - SmartyPay PCF1</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles-global.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!-- Contenedor del login -->
+    <div class="auth-container">
+        <div class="auth-card">
+            <!-- Header con logo -->
+            <div class="auth-header">
+                <div class="logo-container">
+                    <img src="./images/logo-smartypay.png" alt="Logo SmartyPay" class="logo-icon">
+                    <h1 class="logo-title">SmartyPay</h1>
+                </div>
+                <h2 class="auth-title">Bienvenido</h2>
+                <p class="auth-subtitle">Ingresa tus credenciales para acceder al sistema</p>
+            </div>
+
+            <!-- Formulario de login -->
+            <form class="login-form">
+                <!-- Campo de usuario/email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Usuario (Correo Electrónico)</label>
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-input"
+                        placeholder="ejemplo@correo.com"
+                        required
+                        autocomplete="email"
+                    >
+                </div>
+
+                <!-- Campo de contraseña -->
+                <div class="form-group">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input
+                        type="password"
+                        name="password"
+                        class="form-input"
+                        placeholder="Ingresa tu contraseña"
+                        required
+                        autocomplete="current-password"
+                    >
+                </div>
+
+                <!-- Botón de ingresar -->
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-block btn-large"
+                >
+                    Ingresar
+                </button>
+
+                <!-- Enlaces adicionales -->
+                <div class="auth-links">
+                    <a href="recuperar-contrasena.html" class="link-secondary">Olvidé mi contraseña</a>
+                    <span class="separator">|</span>
+                    <a href="registro.html" class="link-primary">Crear Usuario</a>
+                </div>
+            </form>
+
+            <!-- Footer -->
+            <div class="auth-footer">
+                <p class="footer-text">
+                    SmartyPay PCF1 v1.0.0 - Sistema de Gestión de Pagos
+                </p>
+                <p class="footer-text text-muted">
+                    © 2025 Todos los derechos reservados
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
